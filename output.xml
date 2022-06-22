@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.10.2 on win32)" generated="20220608 13:13:52.512" rpa="false">
+<suite id="s1" name="RobotFramework" source="C:\Robo_Framework\RobotFramework">
+<suite id="s1-s1" name="Robo Suite" source="C:\Robo_Framework\RobotFramework\Robo_Suite">
+<suite id="s1-s1-s1" name="Robot Test Suite" source="C:\Robo_Framework\RobotFramework\Robo_Suite\Robot_Test_Suite.robot">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Suite begins</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.117" level="INFO">Suite begins</msg>
+<status status="PASS" starttime="20220608 13:13:53.116" endtime="20220608 13:13:53.117"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="First Test cases">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Begins</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.118" level="INFO">Test Begins</msg>
+<status status="PASS" starttime="20220608 13:13:53.118" endtime="20220608 13:13:53.118"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>HelloWorld</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.119" level="INFO">HelloWorld</msg>
+<status status="PASS" starttime="20220608 13:13:53.119" endtime="20220608 13:13:53.119"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${a}</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.119" level="INFO">3</msg>
+<status status="PASS" starttime="20220608 13:13:53.119" endtime="20220608 13:13:53.119"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${a}*${b}</arg>
+</arguments>
+<assign>
+<var>${c}</var>
+</assign>
+<msg timestamp="20220608 13:13:53.120" level="INFO">${c} = 18</msg>
+<status status="PASS" starttime="20220608 13:13:53.119" endtime="20220608 13:13:53.120"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${c}</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.120" level="INFO">18</msg>
+<status status="PASS" starttime="20220608 13:13:53.120" endtime="20220608 13:13:53.120"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>age=36</arg>
+<arg>place=delhi</arg>
+<arg>name=virat</arg>
+</arguments>
+<assign>
+<var>&amp;{Dic_Var}</var>
+</assign>
+<msg timestamp="20220608 13:13:53.121" level="INFO">&amp;{Dic_Var} = { age=36 | place=delhi | name=virat }</msg>
+<status status="PASS" starttime="20220608 13:13:53.121" endtime="20220608 13:13:53.121"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${List_Var}[0]</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.122" level="INFO">nishant</msg>
+<status status="PASS" starttime="20220608 13:13:53.121" endtime="20220608 13:13:53.122"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Dic_Var}[age]</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.122" level="INFO">36</msg>
+<status status="PASS" starttime="20220608 13:13:53.122" endtime="20220608 13:13:53.122"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${List_Var}</arg>
+<arg>${Dic_Var}</arg>
+</arguments>
+<status status="PASS" starttime="20220608 13:13:53.122" endtime="20220608 13:13:53.123"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${List_Var}</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.123" level="INFO">['nishant', '100', 'RRR', {'age': '36', 'place': 'delhi', 'name': 'virat'}]</msg>
+<status status="PASS" starttime="20220608 13:13:53.123" endtime="20220608 13:13:53.123"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${List_Var}[3][name]</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.124" level="INFO">virat</msg>
+<status status="PASS" starttime="20220608 13:13:53.123" endtime="20220608 13:13:53.124"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test executed by %{username}</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.124" level="INFO">Test executed by aa87125</msg>
+<status status="PASS" starttime="20220608 13:13:53.124" endtime="20220608 13:13:53.124"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Test_Name}</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.125" level="INFO">First Test cases</msg>
+<status status="PASS" starttime="20220608 13:13:53.124" endtime="20220608 13:13:53.125"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test completed</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.125" level="INFO">Test completed</msg>
+<status status="PASS" starttime="20220608 13:13:53.125" endtime="20220608 13:13:53.125"></status>
+</kw>
+<status status="PASS" starttime="20220608 13:13:53.117" endtime="20220608 13:13:53.125" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Selenium demo">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Begins</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.126" level="INFO">Test Begins</msg>
+<status status="PASS" starttime="20220608 13:13:53.126" endtime="20220608 13:13:53.126"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL1}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220608 13:13:53.127" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220608 13:13:53.127" endtime="20220608 13:14:03.947"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220608 13:14:03.947" endtime="20220608 13:14:04.075"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<status status="PASS" starttime="20220608 13:14:04.076" endtime="20220608 13:14:04.077"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>OrangeHRM</arg>
+</arguments>
+<msg timestamp="20220608 13:14:04.082" level="INFO">Page title is 'OrangeHRM'.</msg>
+<status status="PASS" starttime="20220608 13:14:04.077" endtime="20220608 13:14:04.082"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>admin</arg>
+</arguments>
+<msg timestamp="20220608 13:14:04.083" level="INFO">Typing text 'admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20220608 13:14:04.082" endtime="20220608 13:14:04.149"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>1234</arg>
+</arguments>
+<msg timestamp="20220608 13:14:04.150" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20220608 13:14:04.184" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220608 13:14:04.217" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220608 13:14:04.149" endtime="20220608 13:14:04.218"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20220608 13:14:04.218" level="INFO">Clicking element 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20220608 13:14:04.218" endtime="20220608 13:14:05.976"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//span[text()='Invalid credentials']</arg>
+</arguments>
+<msg timestamp="20220608 13:14:05.993" level="INFO">Current page contains element '//span[text()='Invalid credentials']'.</msg>
+<status status="PASS" starttime="20220608 13:14:05.977" endtime="20220608 13:14:05.993"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220608 13:14:05.993" endtime="20220608 13:14:08.180"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test completed</arg>
+</arguments>
+<msg timestamp="20220608 13:14:08.182" level="INFO">Test completed</msg>
+<status status="PASS" starttime="20220608 13:14:08.181" endtime="20220608 13:14:08.182"></status>
+</kw>
+<status status="PASS" starttime="20220608 13:13:53.126" endtime="20220608 13:14:08.182" critical="yes"></status>
+</test>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Suite Completed</arg>
+</arguments>
+<msg timestamp="20220608 13:14:08.184" level="INFO">Suite Completed</msg>
+<status status="PASS" starttime="20220608 13:14:08.183" endtime="20220608 13:14:08.184"></status>
+</kw>
+<status status="PASS" starttime="20220608 13:13:52.603" endtime="20220608 13:14:08.184"></status>
+</suite>
+<status status="PASS" starttime="20220608 13:13:52.599" endtime="20220608 13:14:08.188"></status>
+</suite>
+<status status="PASS" starttime="20220608 13:13:52.571" endtime="20220608 13:14:08.190"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Robo Suite">RobotFramework.Robo Suite</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="Robot Test Suite">RobotFramework.Robo Suite.Robot Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
