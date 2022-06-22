@@ -43,6 +43,7 @@ Selenium demo
     Wait Until Page Contains    "Stay signed in"     10   
     Wait Until Page Does Not Contain Element    locator    
     Close Browser
+    Log     hello nishant
     Set Browser Implicit Wait    value    
    Click Link    locator    
       
